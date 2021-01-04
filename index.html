@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title here -->
+    <title>Samaya</title>
+
+    <!-- favicon here -->
+    <link rel="icon" href="img/logo.svg" type="image/png" sizes="16x16">
+
+    <!-- all CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/font-family.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+  </head>
+
+  <body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <!-- loadaer -->
+    <div class="loader" id="loader">
+      <div>
+        <img src="img/loader.png" alt="loader" class="loader-img">
+        <div id="inTurnFadingTextG">
+          <div id="inTurnFadingTextG_1" class="inTurnFadingTextG">L</div>
+          <div id="inTurnFadingTextG_2" class="inTurnFadingTextG">o</div>
+          <div id="inTurnFadingTextG_3" class="inTurnFadingTextG">a</div>
+          <div id="inTurnFadingTextG_4" class="inTurnFadingTextG">d</div>
+          <div id="inTurnFadingTextG_5" class="inTurnFadingTextG">i</div>
+          <div id="inTurnFadingTextG_6" class="inTurnFadingTextG">n</div>
+          <div id="inTurnFadingTextG_7" class="inTurnFadingTextG">g</div>
+          <div id="inTurnFadingTextG_8" class="inTurnFadingTextG">.</div>
+          <div id="inTurnFadingTextG_9" class="inTurnFadingTextG">.</div>
+          <div id="inTurnFadingTextG_10" class="inTurnFadingTextG">.</div>
+        </div>
+      </div>
+    </div>
+    <!-- loadaer end -->
+
+    <!-- header area start -->
+    <header>
+      <div class="container-fluid">
+        <nav class="menubar">
+          <div class="logo">
+            <a href="#">
+              <img src="img/logo.svg" alt="logo">
+              <span class="logo-text d-none d-md-inline-block">graphic studio & marketing agency</span>
+            </a>
+          </div>
+
+          <div class="lang d-none d-md-block">
+            <span><a href="#">FR</a></span>
+            <span class="lang-devider"></span>
+            <span><a href="#">EN</a></span>
+          </div>
+
+          <div class="menu-toggle">
+            <span></span>
+          </div>
+
+          <div class="offcanvas">
+            <div class="lang d-block d-md-none">
+              <span><a href="#">FR</a></span>
+              <span class="lang-devider"></span>
+              <span><a href="#">EN</a></span>
+            </div>
+            <ul class="main-menu">
+              <li><a href="#home">home</a></li>
+              <li><a href="#latest-project">works</a></li>
+              <li class="active"><a href="#service">what we do</a></li>
+              <li><a href="#about">about us</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+            <span class="logo-text d-block d-md-none">graphic studio & marketing agency</span>
+            <div class="social-info menu-social">
+              <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+              <a href="#"><span><i class="fab fa-facebook-f"></i></span></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- home area start -->
+    <section id="home" class="home">
+      <div class="container-fluid px-0">
+        <div class="row no-gutters">
+          <div class="col-md-5 order-1 order-md-0">
+            <div class="home-left">
+              <div id="slider" class="slider">
+                <div class="home-joystick"></div>
+              </div>
+              <div class="home-left-content wow animate__animated animate__fadeIn" data-wow-duration="0.7s" data-wow-delay="0.3s">
+                <p>Let's build your <br> <span class="type"></span><br> together</p>
+                <a href="#" class="d-none d-md-flex">check out latest projects <i class="fal fa-long-arrow-right"></i></a>
+              </div>
+            </div>
+          </div> <!-- col end -->
+
+          <div class="col-md-7 order-0 order-md-1">
+            <div class="home-right">
+              <div class="home-review wow animate__animated animate__fadeIn" data-wow-duration="0.7s" data-wow-delay="0.3s" id="home-review">
+
+                <div class="splide" id="splide">
+                  <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev d-none" id="reviewArrowPrev">
+                    </button>
+                    <button class="splide__arrow splide__arrow--next d-none" id="reviewArrowNext">
+                    </button>
+                  </div>
+                  <div class="splide__autoplay">
+                    <button class="splide__play d-none" id="reviewAutoPlay"></button>
+                    <button class="splide__pause d-none" id="reviewAutoPause"></button>
+                  </div>
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                      </li>
+                      <li class="splide__slide">
+                        <div class="single-review" id="reviewFirstCard">
+                          <div class="review-head">
+                            <h4>Njila Coaching 1</h4>
+                            <div class="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                            </div>
+                          </div>
+                          <div class="review-body">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="single-review">
+                          <div class="review-head">
+                            <h4>Njila Coaching 2</h4>
+                            <div class="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                            </div>
+                          </div>
+                          <div class="review-body">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="splide__slide">
+                        <div class="single-review low-opacity-up" id="reviewThirdCard">
+                          <div class="review-head">
+                            <h4>Njila Coaching 3</h4>
+                            <div class="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                            </div>
+                          </div>
+                          <div class="review-body">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="splide__slide">
+                        <div class="single-review reviewActive">
+                          <div class="review-head">
+                            <h4>Njila Coaching 4</h4>
+                            <div class="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                            </div>
+                          </div>
+                          <div class="review-body">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="splide__slide">
+                        <div class="single-review low-opacity-down">
+                          <div class="review-head">
+                            <h4>Njila Coaching 5</h4>
+                            <div class="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                            </div>
+                          </div>
+                          <div class="review-body">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="splide__slide">
+                        <div class="single-review" id="reviewLastCard">
+                          <div class="review-head">
+                            <h4>Njila Coaching 6</h4>
+                            <div class="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                            </div>
+                          </div>
+                          <div class="review-body">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="splide__slide">
+                        <div class="single-review">
+                          <div class="review-head">
+                            <h4>Njila Coaching 7</h4>
+                            <div class="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                              <img src="img/star.png" alt="star">
+                            </div>
+                          </div>
+                          <div class="review-body">
+                            Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry.
+                            Lorem Ipsum
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="home-right-img">
+                <img src="img/laptop.png" alt="laptop" class="img-fluid">
+              </div>
+              <div class="social-info d-none d-md-block">
+                <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+                <a href="#"><span><i class="fab fa-facebook-f"></i></span></a>
+              </div>
+            </div>
+          </div> <!-- col end -->
+        </div>
+      </div>
+    </section>
+    <!-- home area end -->
+
+    <!-- latest project area start -->
+    <section id="latest-project" class="latest-project">
+      <h3 class="section-title">latest project</h3>
+      <div class="single-latest-project-wrapper owl-carousel owl-theme">
+        <div class="single-latest-project active mobile-active mobile-active-1 wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.3s">
+          <div class="single-latest-project-content">
+            <h5>la rose cosmetic</h5>
+            <h4>Cosmetic <br> Package</h4>
+            <div class="divider"></div>
+            <a href="#" class="project-view">
+              <span>view the project</span>
+              <i class="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="single-latest-project mobile-active mobile-active-2 slp-l wow animate__animated animate__fadeIn" data-wow-duration="0.6s" data-wow-delay="0.2s">
+          <div class="single-latest-project-content">
+            <h5>ninja coaching</h5>
+            <h4>Full <br> Branding</h4>
+            <div class="divider"></div>
+            <a href="#" class="project-view">
+              <span>view the project</span>
+              <i class="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="single-latest-project mobile-active mobile-active-3 wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.4s">
+          <div class="single-latest-project-content">
+            <h5>ninja coaching</h5>
+            <h4>Full <br> Branding</h4>
+            <div class="divider"></div>
+            <a href="#" class="project-view">
+              <span>view the project</span>
+              <i class="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="single-latest-project low-opacity mobile-active mobile-active-4 wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s">
+          <div class="single-latest-project-content">
+            <h5>ninja coaching</h5>
+            <h4>Full <br> Branding</h4>
+            <div class="divider"></div>
+            <a href="#" class="project-view">
+              <span>view the project</span>
+              <i class="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="single-latest-project mobile-active mobile-active-5 wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s">
+          <div class="single-latest-project-content">
+            <h5>ninja coaching</h5>
+            <h4>Full <br> Branding</h4>
+            <div class="divider"></div>
+            <a href="#" class="project-view">
+              <span>view the project</span>
+              <i class="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="single-latest-project mobile-active mobile-active-6 wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s">
+          <div class="single-latest-project-content">
+            <h5>ninja coaching</h5>
+            <h4>Full <br> Branding</h4>
+            <div class="divider"></div>
+            <a href="#" class="project-view">
+              <span>view the project</span>
+              <i class="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="single-latest-project mobile-active mobile-active-7 wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.5s">
+          <div class="single-latest-project-content">
+            <h5>ninja coaching</h5>
+            <h4>Full <br> Branding</h4>
+            <div class="divider"></div>
+            <a href="#" class="project-view">
+              <span>view the project</span>
+              <i class="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="single-latest-project low-opacity mobile-active mobile-active-8 slp-r wow animate__animated animate__fadeInUp " data-wow-duration="0.6s" data-wow-delay="0.6s">
+          <div class="single-latest-project-content">
+            <h5>ninja coaching</h5>
+            <h4>Web <br> Content</h4>
+            <div class="divider"></div>
+            <a href="#" class="project-view">
+              <span>view the project</span>
+              <i class="fal fa-long-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="latest-project-dots"> </div>
+
+      <div class="section-footer">
+        <a href="#" class="button minimal-btn">view all projects <i class="fal fa-long-arrow-right"></i></a>
+      </div>
+    </section>
+    <!-- latest project area end -->
+
+    <!-- service area start -->
+    <section id="service" class="service">
+      <h3 class="section-title">what we do</h3>
+      <div class="container-fluid">
+        <div class="row service-gutter">
+          <div class="col-md-3 col-8">
+            <div class="single-service wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.2s">
+              <img src="img/service/1.png" alt="service">
+              <div class="single-service-hover">
+                <h4 class="hover-title">strategy</h4>
+                <ul class="hover-content">
+                  <li>Digital strategy</li>
+                  <li>Research</li>
+                  <li>Analytics</li>
+                  <li>Letmotiv</li>
+                  <li>Branding & positioning</li>
+                  <li>Whole sales market</li>
+                  <li>Content strategy</li>
+                  <li>...</li>
+                </ul>
+                <!-- Modal button triger -->
+                <button type="button" class="read-more d-block d-md-none" data-toggle="modal" data-target="#read-strategy-1">
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div class="read-strategy-modal modal fade" id="read-strategy-1" tabindex="-1" role="dialog" aria-labelledby="Strategy" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h4 class="strategy-modal-title">strategy</h4>
+                        <div class="strategy-modal-content">
+                          <ul>
+                            <li>Digital strategy</li>
+                            <li>Research</li>
+                            <li>Analytics</li>
+                            <li>Letmotiv</li>
+                            <li>Branding & positioning</li>
+                            <li>Whole sales market</li>
+                            <li>Content strategy</li>
+                            <li>...</li>
+                          </ul>
+                          <a href="index.html#contact-form" target="_blank" class="button minimal-btn strategy-btn">Let's
+                            meet</a>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button strategy-close-btn" data-dismiss="modal">back</button>
+                      </div>
+                      <div class="strategy-modal-arrow">
+                        <i class="fal fa-long-arrow-left"></i>
+                        <i class="fal fa-long-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- modal end -->
+              </div>
+            </div>
+          </div> <!-- col end -->
+
+          <div class="col-md-3 col-8">
+            <div class="single-service wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.4s">
+              <img src="img/service/2.png" alt="service">
+              <div class="single-service-hover mobile-active">
+                <h4 class="hover-title">strategy</h4>
+                <div class="hover-content">
+                  <ul>
+                    <li>Digital strategy</li>
+                    <li>Research</li>
+                    <li>Analytics</li>
+                    <li>Letmotiv</li>
+                    <li>Branding & positioning</li>
+                    <li>Whole sales market</li>
+                    <li>Content strategy</li>
+                    <li>...</li>
+                  </ul>
+                </div>
+                <!-- Modal button triger -->
+                <button type="button" class="read-more d-block d-md-none" data-toggle="modal" data-target="#read-strategy-2">
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div class="read-strategy-modal modal fade" id="read-strategy-2" tabindex="-1" role="dialog" aria-labelledby="Strategy" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h4 class="strategy-modal-title">strategy</h4>
+                        <div class="strategy-modal-content">
+                          <ul>
+                            <li>Digital strategy</li>
+                            <li>Research</li>
+                            <li>Analytics</li>
+                            <li>Letmotiv</li>
+                            <li>Branding & positioning</li>
+                            <li>Whole sales market</li>
+                            <li>Content strategy</li>
+                            <li>...</li>
+                          </ul>
+                          <a href="index.html#contact-form" target="_blank" class="button minimal-btn strategy-btn">Let's
+                            meet</a>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button strategy-close-btn" data-dismiss="modal">back</button>
+                      </div>
+                      <div class="strategy-modal-arrow">
+                        <i class="fal fa-long-arrow-left"></i>
+                        <i class="fal fa-long-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- modal end -->
+              </div>
+            </div>
+          </div> <!-- col end -->
+
+          <div class="col-md-3 col-8">
+            <div class="single-service wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.6s">
+              <img src="img/service/3.png" alt="service">
+              <div class="single-service-hover">
+                <h4 class="hover-title">strategy</h4>
+                <div class="hover-content">
+                  <ul>
+                    <li>Digital strategy</li>
+                    <li>Research</li>
+                    <li>Analytics</li>
+                    <li>Letmotiv</li>
+                    <li>Branding & positioning</li>
+                    <li>Whole sales market</li>
+                    <li>Content strategy</li>
+                    <li>...</li>
+                  </ul>
+                </div>
+                <!-- Modal button triger -->
+                <button type="button" class="read-more d-block d-md-none" data-toggle="modal" data-target="#read-strategy-3">
+                  Read more
+                </button>
+
+                <!-- Modal -->
+                <div class="read-strategy-modal modal fade" id="read-strategy-3" tabindex="-1" role="dialog" aria-labelledby="Strategy" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h4 class="strategy-modal-title">strategy</h4>
+                        <div class="strategy-modal-content">
+                          <ul>
+                            <li>Digital strategy</li>
+                            <li>Research</li>
+                            <li>Analytics</li>
+                            <li>Letmotiv</li>
+                            <li>Branding & positioning</li>
+                            <li>Whole sales market</li>
+                            <li>Content strategy</li>
+                            <li>...</li>
+                          </ul>
+                          <a href="index.html#contact-form" target="_blank" class="button minimal-btn strategy-btn">Let's
+                            meet</a>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="button strategy-close-btn" data-dismiss="modal">back</button>
+                      </div>
+                      <div class="strategy-modal-arrow">
+                        <i class="fal fa-long-arrow-left"></i>
+                        <i class="fal fa-long-arrow-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- modal end -->
+              </div>
+            </div>
+          </div> <!-- col end -->
+
+          <div class="col-md-3 d-none d-md-block">
+            <div class="single-service wow animate__animated animate__fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.8s">
+              <img src="img/service/4.png" alt="service">
+              <div class="single-service-hover">
+                <h4 class="hover-title">strategy</h4>
+                <div class="hover-content">
+                  <ul>
+                    <li>Digital strategy</li>
+                    <li>Research</li>
+                    <li>Analytics</li>
+                    <li>Letmotiv</li>
+                    <li>Branding & positioning</li>
+                    <li>Whole sales market</li>
+                    <li>Content strategy</li>
+                    <li>...</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> <!-- col end -->
+        </div> <!-- row end -->
+        <div class="service-dots">
+          <span></span>
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="section-footer d-none d-md-block text-center text-lg-right">
+          <a href="#" class="button minimal-btn">more questions <i class="fal fa-long-arrow-right"></i></a>
+        </div>
+      </div> <!-- container end -->
+    </section>
+    <!-- service area end -->
+
+    <!-- about area start -->
+    <section id="about" class="about">
+      <h3 class="section-title">about us</h3>
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <div class="about-content">
+              <h3 class="wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">We build
+                <br> stand out <span class="type2"></span>
+              </h3>
+              <p class="wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">Lorem
+                Ipsum is simply dummy text <br>
+                of the printing and typesetting industry. <br>
+                Lorem Ipsum has been the industry's <br>
+                standard dummy text ever since the <br>
+                1500s, when an unknown printer took <br>
+                a galley of type and scrambled <br>
+                it to make a</p>
+
+              <p class="wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                type specimen book. It has survived not <br>
+                only five centuries, but also the leap into <br>
+                electronic typesetting, remaining <br>
+                essentially unchanged. It was popularised <br>
+                in the 1960s with the release of Letraset <br>
+              </p>
+            </div>
+          </div> <!-- col end -->
+
+          <div class="col-lg-6 align-self-center d-none d-md-block">
+            <div class="fun-fact">
+              <div class="row">
+                <div class="col-4">
+                  <div class="single-fact counter wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                    <img src="img/about/icon1.svg" alt="icon">
+                    <h4 class="counter-value" data-count="27">0</h4>
+                    <p>clients</p>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="single-fact counter wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">
+                    <img src="img/about/icon2.svg" alt="icon">
+                    <!-- <h4 class="counter">49</h4> -->
+                    <h4 class="counter-value" data-count="49">0</h4>
+                    <p>brainstorms</p>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="single-fact counter wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">
+                    <img src="img/about/icon3.svg" alt="icon">
+                    <!-- <h4 class="counter">36</h4> -->
+                    <h4 class="counter-value" data-count="36">0</h4>
+                    <p>meetings</p>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="single-fact counter wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.3s">
+                    <img src="img/about/icon4.svg" alt="icon">
+                    <!-- <h4 class="counter">91</h4> -->
+                    <h4 class="counter-value" data-count="91">0</h4>
+                    <p>coffees</p>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="single-fact counter wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <img src="img/about/icon5.svg" alt="icon">
+                    <!-- <h4 class="counter">37</h4> -->
+                    <h4 class="counter-value" data-count="37">0</h4>
+                    <p>wins</p>
+                  </div>
+                </div>
+
+                <div class="col-4">
+                  <div class="single-fact counter wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.7s">
+                    <img src="img/about/icon6.svg" alt="icon">
+                    <!-- <h4 class="counter">136</h4> -->
+                    <h4 class="counter-value" data-count="136">0</h4>
+                    <p>sodas</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- row end -->
+        <div class="section-footer">
+          <a href="#" class="button minimal-btn">let's meet <i class="fal fa-long-arrow-right d-none d-md-inline-block"></i></a>
+        </div>
+      </div> <!-- container end -->
+    </section>
+    <!-- about area end -->
+
+    <!-- contact area start -->
+    <section id="contact" class="contact">
+      <div class="container-fluid px-0">
+        <div class="row no-gutters">
+          <div class="col-md-6 d-none d-md-block">
+            <div class="contact-detail">
+              <h3 class="section-title">contact us</h3>
+              <h3 class="contact-title wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">Hello</h3>
+              <p class="desc wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.4s">Got a
+                new project ? <br>
+                Want to upgrade ? <br>
+                Get in touch ! <br>
+                We will get back to you ASAP.</p>
+              <h4 class="company-name wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">samaya graphics</h4>
+              <p class="contact-info wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.6s">+32472 41 06 76 <br>
+                info@samaya-graphics.be</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="button minimal-btn big-btn" data-toggle="modal" data-target="#job-post">
+                join the team <i class="fal fa-long-arrow-right"></i>
+              </button>
+
+
+              <!-- Modal -->
+              <div class="join-frontend modal fade" id="job-post" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="join-frontend-slider owl-carousel owl-theme">
+                      <div class="modal-body">
+                        <h3>front-end dev.</h3>
+                        <h4>Job description</h4>
+                        <p class="job-desc">We are looking for a committed person, passionate about product and design,
+                          who develops interfaces with eye and rigor in order to take the lead on certain projects.</p>
+
+                        <h4>Profile wanted</h4>
+                        <p class="desc-intro">Lorem Ipsum is simply dummy text of the printing</p>
+                        <ul>
+                          <li>and typesetting industry. Lorem</li>
+                          <li>Ipsum has been the industry's standard</li>
+                          <li>dummy text ever since the 1500s</li>
+                          <li>and typesetting industry. Lorem</li>
+                          <li>Ipsum has been the industry's standard</li>
+                          <li>dummy text ever since the 1500s</li>
+                        </ul>
+
+                        <h4>Profile wanted</h4>
+                        <p class="desc-intro">Lorem Ipsum is simply dummy text of the printing</p>
+                        <ul>
+                          <li>and typesetting industry. Lorem</li>
+                          <li>Ipsum has been the industry's standard</li>
+                          <li>dummy text ever since the 1500s</li>
+                          <li>and typesetting industry. Lorem</li>
+                          <li>Ipsum has been the industry's standard</li>
+                          <li>dummy text ever since the 1500s</li>
+                        </ul>
+
+                        <div class="join-frontend-footer">
+                          <button type="button" class="button minimal-btn-alt" data-toggle="modal" data-target="#join-team">
+                            I want this job <i class="fal fa-long-arrow-right"></i>
+                          </button>
+                        </div>
+                      </div>
+
+                      <div class="modal-body">
+                        <h3>front-end dev.</h3>
+                        <h4>Job description</h4>
+                        <p class="job-desc">We are looking for a committed person, passionate about product and design,
+                          who develops interfaces with eye and rigor in order to take the lead on certain projects.</p>
+
+                        <h4>Profile wanted</h4>
+                        <p class="desc-intro">Lorem Ipsum is simply dummy text of the printing</p>
+                        <ul>
+                          <li>and typesetting industry. Lorem</li>
+                          <li>Ipsum has been the industry's standard</li>
+                          <li>dummy text ever since the 1500s</li>
+                          <li>and typesetting industry. Lorem</li>
+                          <li>Ipsum has been the industry's standard</li>
+                          <li>dummy text ever since the 1500s</li>
+                        </ul>
+
+                        <h4>Profile wanted</h4>
+                        <p class="desc-intro">Lorem Ipsum is simply dummy text of the printing</p>
+                        <ul>
+                          <li>and typesetting industry. Lorem</li>
+                          <li>Ipsum has been the industry's standard</li>
+                          <li>dummy text ever since the 1500s</li>
+                          <li>and typesetting industry. Lorem</li>
+                          <li>Ipsum has been the industry's standard</li>
+                          <li>dummy text ever since the 1500s</li>
+                        </ul>
+
+                        <div class="join-frontend-footer">
+                          <button type="button" class="button minimal-btn-alt" data-toggle="modal" data-target="#join-team">
+                            I want this job <i class="fal fa-long-arrow-right"></i>
+                          </button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="join-team-modal modal fade" id="join-team" tabindex="-1" role="dialog" aria-labelledby="Join The Team" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <form method="POST">
+                        <div class="row align-items-md-end">
+                          <div class="col">
+                            <input type="text" placeholder="First Name*" class="text-input join-team-input">
+                          </div>
+                          <div class="col">
+                            <input type="text" placeholder="Last Name*" class="text-input join-team-input">
+                          </div>
+                          <div class="col-5 d-md-flex justify-content-md-end align-items-md-start">
+                            <div class="add-file">
+                              <span class="label">Add your cv</span>
+                              <input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File">
+                            </div>
+                          </div>
+                          <div class="w-100"></div>
+                          <div class="col-12">
+                            <textarea class="textarea-input join-team-input" id="message"></textarea>
+                            <label for="message" class="textarea-placeholder join-team-input">Talk about you*</label>
+                          </div>
+                        </div>
+                        <div class="contact-form-footer join-team-footer">
+                          <button href="#" class="button minimal-btn-alt">join the team <i class="fal fa-long-arrow-right"></i></button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div> <!-- col end -->
+
+          <div class="col-md-6">
+            <div class="contact-form" id="contact-form">
+              <h3 class="contact-title-mobile d-block d-md-none wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">Hello</h3>
+              <form method="POST" class="wow animate__animated animate__fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" placeholder="First Name*" class="text-input" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" placeholder="Last Name*" class="text-input" required>
+                  </div>
+                  <div class="col-12">
+                    <input type="text" placeholder="Company" class="text-input" required>
+                  </div>
+                  <div class="col-12">
+                    <textarea class="textarea-input" id="message"></textarea>
+                    <label for="message" class="textarea-placeholder">Your projects*</label>
+                  </div>
+                </div>
+                <div class="mobile-contact-info d-block d-md-none">
+                  <h4 class="company-name">samaya graphics</h4>
+                  <p class="contact-info">+32472 41 06 76 <br>
+                    info@samaya-graphics.be</p>
+                </div>
+                <div class="contact-form-footer">
+                  <button type="submit" href="#" class="button contact-btn big-btn">build a project <i class="fal fa-long-arrow-right"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div> <!-- row end -->
+      </div> <!-- container end -->
+    </section>
+    <!-- contact area end -->
+
+    <!-- footer area start -->
+    <footer>
+      <img src="img/footer-logo.svg" alt="footer logo" class="footer-logo">
+      <div class="footer-info">
+        <span>TVA BE000 000 000</span>
+        <span>IBAN BE00 000 000 000</span>
+        <span>Mentions légales</span>
+      </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- jQuery JS -->
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+
+    <!-- bootstrap JS -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- counter JS -->
+    <script src="js/counter.js"></script>
+
+    <!-- Type JS -->
+    <script src="js/typed.js"></script>
+
+    <!-- wow JS -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- owl carosel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- main JS -->
+    <script src="js/main.js"></script>
+
+    <!-- main2 JS -->
+    <script src="js/main2.js"></script>
+
+    <script>
+      $('.join-frontend-slider').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        dots: false,
+        // margin: 10,
+      });
+
+    </script>
+
+    <!-- splide slider -->
+    <script src="js/splide.min.js"></script>
+
+    <script>
+      var splide = new Splide('#splide', {
+        direction: 'ttb',
+        height: '30rem',
+        perPage: 3,
+        perMove: 1,
+        pagination: false,
+        start: 3,
+        autoplay: true,
+        interval: 2500,
+        rewind: true,
+
+      }).mount();
+
+      splide.on('move', function () {
+        $(".splide__slide").children().removeClass("low-opacity-up");
+        $(".splide__slide").children().removeClass("low-opacity-down");
+
+      });
+
+      splide.on('moved', function () {
+        $(".splide__slide.is-visible.is-active").children().addClass("low-opacity-up");
+        $("li.splide__slide.is-visible").last().children().addClass("low-opacity-down");
+      });
+
+    </script>
+    <script>
+      // $('.owl-carousel-project').owlCarousel({
+      //   loop: true,
+      //   margin: 10,
+      //   nav: true,
+      //   navText: ['<div class="prev-arrow"><i class="fal fa-angle-left"></i></div>', '<div class="next-arrow"><i class="fal fa-angle-right"></i></div>'],
+      //   responsive: {
+      //     0: {
+      //       items: 1
+      //     },
+      //     600: {
+      //       items: 3
+      //     },
+      //     1000: {
+      //       items: 5,
+      //     }
+      //   }
+      // })
+
+      $('.single-latest-project-wrapper').owlCarousel({
+        stagePadding: 150,
+        loop: true,
+        // margin: 10,
+        nav: true,
+        dotsContainer: '.latest-project-dots',
+        navText: ['<div class="prev-arrow"><i class="fal fa-angle-left"></i></div>', '<div class="next-arrow"><i class="fal fa-angle-right"></i></div>'],
+        responsive: {
+          0: {
+            items: 1,
+            margin: 20,
+            stagePadding: 50,
+            dots: true,
+          },
+          380: {
+            items: 1,
+            margin: 20,
+            stagePadding: 70,
+            dots: true,
+          },
+          576: {
+            items: 2,
+            margin: 20,
+            stagePadding: 60,
+            dots: true,
+          },
+          768: {
+            items: 2,
+            margin: 20,
+            stagePadding: 100,
+            dots: false,
+          },
+          992: {
+            items: 3,
+            margin: 10,
+            stagePadding: 100,
+            dots: false,
+          },
+          1200: {
+            items: 3,
+            margin: 20,
+            stagePadding: 150,
+            dots: false,
+          }
+        }
+      })
+
+    </script>
+
+    <!-- reviewJoystick JS -->
+    <script src="js/reviewJoystick.js"></script>
+
+
+  </body>
+
+</html>

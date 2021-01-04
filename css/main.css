@@ -1,0 +1,1445 @@
+/* CSS Index
+------------------------------------
+01. Template Default CSS 
+02. header CSS
+03. home CSS
+04. latest project CSS
+05. service CSS
+06. about CSS
+07. contact CSS
+08. portfolio CSS
+09. project CSS
+10. footer CSS
+----------------------------------*/
+
+/* ..................................
+ 01. Template Default CSS 
+.................................. */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'BrownStd';
+  font-weight: 300;
+  color: #000000;
+}
+
+a,
+.button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ====================================================
+   Author's custom styles
+   ==================================================== */
+
+/* ..................................
+ 02. header CSS 
+.................................. */
+header {
+  position: fixed;
+  width: 100%;
+  padding: 30px 20px;
+  z-index: 9;
+}
+
+.menubar {
+  display: flex;
+}
+
+header.sticky-state .logo {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logo {
+  position: relative;
+  z-index: 10;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.logo img {
+  width: 18px;
+}
+
+.logo-text {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 10px;
+  transform: translateY(3px);
+}
+
+.lang {
+  margin-left: auto;
+  margin-right: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+.lang span {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+
+.lang span.lang-devider {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: #000;
+}
+
+.menu-toggle {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.menu-toggle span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 4px;
+  background: #000;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.menu-toggle span:before,
+.menu-toggle span:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -10px;
+  width: 100%;
+  height: 4px;
+  background: #000;
+  transition: 0.3s;
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+
+.menu-toggle span:after {
+  top: unset;
+  bottom: -10px;
+  width: 50%;
+}
+
+.menu-toggle:hover span:before {
+  width: 50%;
+}
+
+.menu-toggle:hover span:after {
+  width: 100%;
+}
+
+.offcanvas {
+  position: fixed;
+  right: -350px;
+  top: 0;
+  width: 330px;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 30px 20px;
+  z-index: 9;
+  transition: 0.45s;
+}
+
+.offcanvas.active {
+  right: 0;
+}
+
+.main-menu li {
+  color: #000;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.main-menu li.active {
+  color: #e73a5f;
+}
+
+.social-info.menu-social:before {
+  content: '';
+  position: absolute;
+  left: -220px;
+  top: 50%;
+  width: 200px;
+  height: 1px;
+  background: #000;
+}
+
+/* ..................................
+ 03. home CSS 
+.................................. */
+.home {
+  height: 100vh;
+}
+
+.home-left {
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 45px;
+  position: relative;
+}
+
+.home-joystick {
+  content: '';
+  position: absolute;
+  top: 50%;
+  /* left: 100%; */
+  right: -50px;
+  transform: translateY(-50%);
+  width: 69px;
+  height: 169px;
+  background: url(../img/symbol-2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+div#slider {
+  height: 100vh;
+}
+
+.logo-btn {
+  position: absolute;
+  left: -73px;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(calc(-50% + 0px));
+  -webkit-transform: translateY(calc(-50% + 0px));
+  -moz-transform: translateY(calc(-50% + 0px));
+  -ms-transform: translateY(calc(-50% + 0px));
+  -o-transform: translateY(calc(-50% + 0px));
+}
+
+.logo-btn img {
+  width: 43px;
+  height: 43px;
+}
+
+.home-left-content {
+  margin-top: 45px;
+}
+
+.home-left-content p {
+  font-size: 38px;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.home-left-content p span {
+  color: #e73a5f;
+}
+
+.home-left-content a {
+  font-size: 19px;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.3s;
+}
+
+.home-left-content a i {
+  transform: translateY(2px);
+  margin-left: 5px;
+  transition: 0.1s;
+}
+
+.home-left-content a:hover {
+  color: #e73a5f;
+}
+
+.home-left-content a:hover i {
+  transform: translate(5px, 2px);
+}
+
+.home-left-content a img {
+  width: 20px;
+  height: 20px;
+  transform: translateY(2px);
+  margin-left: 5px;
+}
+
+.home-right {
+  height: 100vh;
+  background: linear-gradient(to bottom, #816148, #ecc8b0);
+  position: relative;
+}
+
+.home-review {
+  position: absolute;
+  top: 52%;
+  left: 67px;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.single-review {
+  width: 285px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 18px;
+  position: relative;
+
+}
+
+.review-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.single-review h4 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+.review-head .star {
+  line-height: 0;
+}
+
+.review-head .star img {
+  width: 13px;
+}
+
+.review-body {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.single-review.low-opacity-up,
+.single-review.low-opacity-down {
+  background: transparent;
+}
+
+.single-review.low-opacity-down .review-body {
+  opacity: 0.2;
+}
+
+.single-review.low-opacity-up .review-head {
+  opacity: 0;
+}
+
+.single-review.low-opacity-up .review-body {
+  opacity: 0.25;
+}
+
+.single-review.low-opacity-up:before,
+.single-review.low-opacity-down:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.6));
+  border-radius: 15px;
+}
+
+.single-review.low-opacity-down:before {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.6));
+}
+
+.home-right-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 15%;
+}
+
+.social-info {
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+}
+
+.social-info span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #000;
+  text-align: center;
+  line-height: 33px;
+  color: #fff;
+  font-size: 17px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.social-info span:hover {
+  background: #e73a5f;
+}
+
+/* ..................................
+ 04. latest project CSS
+.................................. */
+.latest-project {
+  overflow-x: hidden;
+  padding: 77px 0 55px;
+}
+
+.section-title {
+  padding: 0 120px;
+  font-size: 30px;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  margin-bottom: 110px;
+}
+
+.single-latest-project-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.single-latest-project {
+  /* flex-basis: 25%; */
+  width: 100%;
+  padding: 200px 40px 60px;
+  /* margin: 0 15px; */
+}
+
+.single-latest-project.slp-l {
+  /* margin-left: -7%; */
+}
+
+.single-latest-project.slp-r {
+  /* margin-right: -12%; */
+}
+
+.single-latest-project.active {
+  background: url(../img/project-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.11);
+  position: relative;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.single-latest-project.active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.single-latest-project.active:hover:before {
+  opacity: 1;
+}
+
+.single-latest-project.active .single-latest-project-content {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.single-latest-project.active:hover .single-latest-project-content {
+  opacity: 1;
+  visibility: visible;
+  color: #fff !important;
+}
+
+.single-latest-project.active:hover .single-latest-project-content .divider {
+  background: #fff;
+}
+
+.single-latest-project.low-opacity {
+  opacity: 0.3 !important;
+}
+
+.single-latest-project-content {
+  color: #2a2a2a;
+}
+
+.single-latest-project-content h5 {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.single-latest-project-content h4 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 6px;
+}
+
+.single-latest-project-content .divider {
+  height: 2px;
+  width: 100%;
+  background: #2a2a2a;
+  margin: 50px 0 35px;
+}
+
+.single-latest-project-content .project-view {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+}
+
+.single-latest-project-content .project-view span {
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+.single-latest-project-content .project-view i {
+  font-size: 16px;
+}
+
+.splide__pagination {
+  display: none;
+}
+
+.splide__arrow.prev-arrow,
+.splide__arrow.next-arrow {
+  background: transparent;
+}
+
+
+.prev-arrow,
+.next-arrow {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  width: 35px !important;
+  height: 35px !important;
+  border-radius: 50%;
+  border: 1px solid #000 !important;
+  /* background: transparent !important; */
+  text-align: center;
+  line-height: 41px;
+  font-size: 32px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transform: translateY(-50%) !important;
+  -moz-transform: translateY(-50%) !important;
+  -ms-transform: translateY(-50%) !important;
+  -o-transform: translateY(-50%) !important;
+}
+
+.prev-arrow {
+  left: 70px;
+}
+
+.next-arrow {
+  right: 70px;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+  background: #000;
+  color: #fff;
+}
+
+.section-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 66px 140px 0;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.minimal-btn {
+  width: 215px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  border: 1px solid #000;
+  letter-spacing: 2px;
+  color: #3f3f3f;
+}
+
+.minimal-btn i {
+  font-size: 18px;
+  margin-left: 8px;
+  transform: translateY(2px);
+}
+
+.minimal-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ..................................
+ 05. service CSS 
+.................................. */
+.service {
+  background: #edecec;
+  padding: 83px 0 118px;
+  overflow: hidden;
+}
+
+.service-gutter {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.service-gutter>[class*="col-"] {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.single-service {
+  position: relative;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.single-service:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.single-service img {
+  width: 100%;
+}
+
+.single-service-hover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  padding: 40px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.single-service:hover .single-service-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.single-service-hover .hover-title {
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.single-service-hover .hover-title:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #cecece;
+}
+
+.single-service-hover .hover-content {
+  padding: 10px;
+}
+
+.single-service-hover .hover-content li {
+  color: #cecece;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* ..................................
+ 06. about CSS 
+.................................. */
+.about {
+  padding: 80px 0 120px;
+}
+
+.about-content {
+  padding-left: 110px;
+  border-right: 2px solid #000;
+}
+
+.about-content h3 {
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 60px;
+}
+
+.about-content h3 span {
+  color: #e73a5f;
+}
+
+.about-content p {
+  font-size: 20px;
+  padding-bottom: 45px;
+}
+
+.fun-fact {
+  padding: 0 115px;
+}
+
+.single-fact {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.single-fact img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.single-fact h4 {
+  font-size: 45px;
+  color: #e73a5f;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.single-fact p {
+  font-size: 22px;
+  text-transform: lowercase;
+}
+
+/* ..................................
+ 07. contact CSS
+.................................. */
+.contact {
+  overflow: hidden;
+}
+
+.contact-detail {
+  background: #edecec;
+  height: 100%;
+  padding: 90px 30px 120px 110px;
+}
+
+.contact-detail .section-title {
+  padding-left: 0;
+}
+
+.contact-detail .contact-title {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 55px;
+  line-height: 1;
+}
+
+.contact-detail .desc {
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 3px;
+  margin-bottom: 65px;
+}
+
+.contact-detail .company-name {
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 45px;
+}
+
+.contact-detail .contact-info {
+  font-size: 19px;
+  line-height: 38px;
+  margin-bottom: 130px;
+}
+
+.big-btn {
+  height: 80px;
+  width: 300px;
+  line-height: 80px;
+  font-size: 20px;
+}
+
+.big-btn i {
+  font-size: 24px;
+}
+
+.contact-form {
+  background: #2d2d2d;
+  height: 100%;
+  padding: 90px 90px 120px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.text-input,
+.textarea-input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #eb6480;
+  color: #eb6480;
+  margin-bottom: 40px;
+}
+
+.text-input::placeholder {
+  color: #eb6480;
+  font-size: 20px;
+}
+
+.textarea-input {
+  height: 160px;
+  resize: none;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.textarea-placeholder {
+  position: absolute;
+  bottom: 45px;
+  color: #eb6480;
+  font-size: 20px;
+  cursor: text;
+}
+
+.textarea-input:focus~.textarea-placeholder {
+  display: none;
+}
+
+.contact-form-footer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-btn {
+  letter-spacing: 2px;
+  background: #e73a5f;
+  color: #000;
+}
+
+.contact-btn:hover {
+  color: #fff;
+  background: #000;
+}
+
+.contact-btn i {
+  margin-left: 8px;
+  transform: translateY(2px);
+}
+
+.join-team-modal .modal-dialog,
+.join-frontend .modal-dialog {
+  max-width: 1000px;
+}
+
+.join-team-modal .modal-content,
+.join-frontend .modal-content {
+  border-radius: 0;
+}
+
+.join-team-modal .modal-body {
+  padding: 170px 60px 40px;
+}
+
+.add-file {
+  background: #e73a5f;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  height: 55px;
+  line-height: 55px;
+  margin-bottom: 40px;
+}
+
+.add-file span.label {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%px;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.add-file #upload {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.join-team-input.text-input,
+.join-team-input.textarea-input {
+  border-bottom: 2px solid #000;
+  color: #000;
+}
+
+.join-team-input.text-input::placeholder {
+  color: #000;
+}
+
+.join-team-input.textarea-placeholder {
+  color: #000;
+}
+
+.join-team-footer {
+  margin-top: 60px;
+}
+
+.minimal-btn-alt {
+  letter-spacing: 2px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  height: 60px;
+  width: 250px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.minimal-btn-alt i {
+  font-size: 22px;
+}
+
+.minimal-btn-alt:hover {
+  color: #000;
+  background: transparent;
+  border: 1px solid #000;
+}
+
+.minimal-btn-alt i {
+  margin-left: 8px;
+  transform: translateY(2px);
+}
+
+/* ..................................
+ 08. portfolio CSS 
+.................................. */
+#portfolio .home-left-content a i {
+  transform: translateY(0px);
+  margin-left: 20px;
+  transition: 0.1s;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #272727;
+  text-align: center;
+  line-height: 20px;
+  padding-left: 5px;
+}
+
+#portfolio .home-left-content a:hover i {
+  border-color: #e73a5f;
+}
+
+.portfolio-logo-btn {
+  right: -49px;
+  left: unset;
+}
+
+#portfolio .home-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-container {
+  width: 100%;
+  position: relative;
+}
+
+.portfolio-container .slick-slider {
+  position: static;
+}
+
+.portfolio-container .slick-list {
+  overflow: visible;
+}
+
+.portfolio-container .slick-slide {
+  min-height: 550px;
+}
+
+.portfolio-list {
+  overflow: hidden;
+  height: 550px;
+  padding-top: 10px;
+}
+
+.portfolio-wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.portfolio-wrapper.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.single-portfolio {
+  margin-bottom: 8px;
+  transition: 0.3s;
+  height: 171px;
+  overflow: hidden;
+}
+
+.single-portfolio:hover {
+  transform: scale(1.2);
+  position: relative;
+  z-index: 1;
+}
+
+.single-portfolio img {
+  width: 100%;
+}
+
+.portfolio-gutter {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
+.portfolio-gutter>[class*="col-"] {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.portfolio-dots {
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.portfolio-dots li {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #dedede;
+  margin: 7px 0;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.portfolio-dots li.slick-active {
+  background: #5b5b5b;
+}
+
+.portfolio-dots li button {
+  display: none;
+}
+
+/* ..................................
+ 09. project CSS 
+.................................. */
+.project {
+  /* height: 100vh; */
+  /* padding-top: 120px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* background: linear-gradient(180deg, #1d8bbc, #33a1d2); */
+  position: relative;
+}
+
+.project-wrap-btn {
+  position: relative;
+}
+
+.project-logo-btn {
+  left: unset;
+  right: 35%;
+  top: unset;
+  bottom: -1px;
+  transform: translateX(-7px);
+  -webkit-transform: translateX(-7px);
+  -moz-transform: translateX(-7px);
+  -ms-transform: translateX(-7px);
+  -o-transform: translateX(-7px);
+}
+
+.project-wrapper {
+  position: relative;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+}
+
+.project-wrapper:before {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  right: 35%;
+  width: 69px;
+  height: 169px;
+  background: url(../img/symbol-2.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  z-index: 1;
+}
+
+.project-dots {
+  position: absolute;
+  bottom: 0;
+  right: 33%;
+  z-index: 2;
+}
+
+.project-dots li {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #dedede;
+  margin: 7px 7px;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.project-dots li.slick-active {
+  background: #5b5b5b;
+}
+
+.project-dots li button {
+  display: none;
+}
+
+.single-project {
+  background: linear-gradient(180deg, #1d8bbc, #33a1d2);
+  height: 58vh;
+  display: flex !important;
+  align-items: center;
+}
+
+.single-project-content {
+  text-align: right;
+  padding: 30px 15px 0 0;
+  border-right: 1px solid #fff;
+}
+
+.single-project-content h4 {
+  font-size: 38px;
+  line-height: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #e73a5f;
+  margin-bottom: 20px;
+  letter-spacing: 6px;
+}
+
+.single-project-content h4 span {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.single-project-img img {
+  width: 100%;
+}
+
+.single-project-feature li {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+.project-page-portfolio {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.project-page-portfolio h4 {
+  font-size: 20px;
+  text-align: right;
+  margin-right: 120px;
+  margin-bottom: 25px;
+  text-transform: lowercase;
+}
+
+.other-project-wrapper {
+  position: relative;
+}
+
+.other-project-wrapper .owl-nav {
+  position: absolute;
+  top: -65px;
+  right: 30px;
+}
+
+.other-project-wrapper .owl-nav button.owl-prev,
+.other-project-wrapper .owl-nav button.owl-next {
+  outline: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 23px;
+}
+
+.other-project-wrapper .owl-nav button.owl-prev:hover,
+.other-project-wrapper .owl-nav button.owl-next:hover {
+  background: #000;
+  color: #fff;
+}
+
+.other-project-wrapper .owl-nav button.owl-prev span,
+.other-project-wrapper .owl-nav button.owl-next span {
+  font-size: 30px !important;
+}
+
+.project-page-social.social-info {
+  position: relative;
+  right: unset;
+  bottom: unset;
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+.join-frontend .modal-body {
+  padding: 50px 50px 30px 50px;
+}
+
+.join-frontend-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.join-frontend .modal-body h3 {
+  font-size: 27px;
+  letter-spacing: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.join-frontend .modal-body h4 {
+  font-size: 19px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.join-frontend .modal-body p {
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.join-frontend .modal-body .job-desc {
+  margin-bottom: 30px;
+}
+
+.join-frontend .modal-body .desc-intro {
+  margin-bottom: 15px;
+}
+
+.join-frontend .modal-body ul {
+  margin-bottom: 25px;
+}
+
+.join-frontend .modal-body ul li {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.join-frontend .modal-body ul li:before {
+  content: '-';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.join-frontend .owl-theme .owl-nav {
+  margin-top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+}
+
+.join-frontend .owl-nav button.owl-prev,
+.join-frontend .owl-nav button.owl-next {
+  outline: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  line-height: 31px;
+  font-size: 40px;
+}
+
+.join-frontend .owl-nav button.owl-prev:hover,
+.join-frontend .owl-nav button.owl-next:hover {
+  border: 1px solid #000;
+  background: #000;
+}
+
+.join-frontend .owl-nav button.owl-prev {
+  position: absolute;
+  left: -150px;
+}
+
+
+.join-frontend .owl-nav button.owl-next {
+  position: absolute;
+  right: -150px;
+}
+
+div#join-team .modal-content {
+  box-shadow: 0 0px 115px 100px #00000078;
+}
+
+div#join-team .modal-dialog.modal-dialog-centered {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+
+/* ..................................
+ 10. footer CSS 
+.................................. */
+footer {
+  height: 160px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px 0 110px;
+}
+
+.footer-logo {
+  max-width: 200px;
+}
+
+.footer-info {
+  width: 58%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info span {
+  font-size: 15px;
+
+}
+
+/* ------- end --------- */
+
+/* Gal */
+/* review carousel*/
+
+.home-review .owl-carousel {
+  transform: rotate(90deg);
+}
+
+.home-review .owl-carousel .item {
+  transform: rotate(-90deg);
+}
+
+.owl-nav.disabled {
+  display: block !important;
+}
