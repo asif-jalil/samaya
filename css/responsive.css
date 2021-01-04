@@ -1105,6 +1105,12 @@
     transform: translateX(50%);
   }
 
+  .single-project {
+    padding-top: 50px;
+    height: auto;
+    min-height: calc(100vh + 10px);
+  }
+
   .single-project-content {
     padding-top: 15px;
     border-right: none;
